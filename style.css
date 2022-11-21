@@ -136,8 +136,22 @@ a {
   padding: 2rem;
 }
 
+.description {
+  display: flex
+}
+
+#headshot img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10%;
+  margin-right: 15px;
+}
+
+#message {
+  margin-left: 15px;
+}
+
 #title {
-  font-family: 'Space Grotesk', sans-serif;
   font-size: 4rem;
   margin-bottom: 1rem;
 }
