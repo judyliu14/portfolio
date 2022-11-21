@@ -1,0 +1,254 @@
+/********************************** RESET ************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+#sub-page ul,
+#sub-page ol,
+.drawers-section-title .btns,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/********************************** FONTS **********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Space+Mono&display=swap');
+
+/********************************** VARIABLES **********************************/
+
+:root {
+  --eclipse-black: #000000;
+  --ultraviolet: #D020E4;
+  --radioactive-orange: #FF6700;
+  --pluto-white: #FFFFFF;
+  --cosmic-purple: #4F0D72;
+  --horizon-gradient: linear-gradient(90deg, #FF6700 0%, #DC23A8 37%, #DC23A8 69%, #4F0D72 100%);
+  --desktop-padding: 30px;
+  --desktop-icon-size: 30px;
+  --mobile-padding: 30px;
+  --mobile-icon-size: 24px;
+}
+
+body,
+a {
+  font-family: 'Space Mono', monospace;
+  ;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+  background-color: var(--eclipse-black);
+  color: var(--pluto-white);
+  opacity: 1;
+  transition: 0.7s opacity;
+}
+
+.light-mode,
+.light-mode a {
+  background-color: var(--pluto-white);
+  color: var(--eclipse-black);
+}
+
+/********************************** INTRO **********************************/
+
+.intro {
+  padding: 2rem;
+}
+
+#title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+/********************************** PROJECTS **********************************/
+
+.projects {
+  padding: 0 3rem;
+}
+
+.project {
+  padding: 2rem 0;
+}
+
+.project-title span {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  transition: 0.2s;
+}
+
+.project-title:hover span {
+  background-color: var(--pluto-white);
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: var(--eclipse-black);
+}
+
+.light-mode .project-title:hover span {
+  background-color: var(--eclipse-black);
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: var(--pluto-white);
+}
+
+.project-title #sgf-img,
+.project-title #bullet-journal,
+.project-title #parstagram,
+.project-title #twitter,
+.project-title #netflix {
+  opacity: 0;
+  size: 100% auto;
+  max-width: 400px !important;
+  max-height: 400px;
+  box-sizing: border-box;
+  transition: ease .2s;
+  position: absolute;
+  object-fit: cover;
+}
+
+.project-title:hover #sgf-img,
+.project-title:hover #bullet-journal,
+.project-title:hover #parstagram,
+.project-title:hover #twitter,
+.project-title:hover #netflix {
+  opacity: 1;
+  cursor: pointer;
+  position: absolute;
+}
+
+/******************************** FOOTER *************************************/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer .social-icons {
+  float: left;
+  padding-left: var(--desktop-padding);
+  padding-bottom: var(--desktop-padding);
+}
+
+footer .toggle-icons {
+  float: right;
+  padding-right: var(--desktop-padding);
+  padding-bottom: var(--desktop-padding);
+}
+
+footer .social-icons .icon,
+.light-mode footer .social-icons .icon {
+  background-color: transparent;
+}
+
+footer .social-icons i {
+  margin-right: var(--desktop-icon-size);
+  font-size: var(--desktop-icon-size);
+  color: var(--pluto-white);
+  transition: 0.3s;
+}
+
+footer .toggle-icons i {
+  margin-left: var(--desktop-icon-size);
+  font-size: var(--desktop-icon-size);
+  color: var(--pluto-white);
+  transition: 0.3s;
+}
+
+.light-mode footer .social-icons i,
+.light-mode footer .toggle-icons i {
+  color: var(--eclipse-black);
+}
+
+footer .social-icons i:hover,
+footer .toggle-icons i:hover {
+  color: var(--ultraviolet);
+  cursor: pointer;
+}
